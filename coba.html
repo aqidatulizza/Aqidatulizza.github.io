@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>latihan</title>
+    <style>
+        .container{
+            width: 800px;
+            margin: 10px 200px;
+        }
+        .header{
+            background-color: lightgrey;
+            min-height: 40px;
+            z-index: 0;
+        }
+        .menu ul li{
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid red;
+            position: relative;
+        }
+        .menu ul li:hover{
+            background-color: blue;
+        }
+        .menu ul li a{
+            text-decoration: none;
+        }
+        ul.submenu{
+            text-align: left;
+            top: 20px;
+            position: absolute;
+            display: none;
+            margin-left: 10px;
+        }
+        ul.submenu li{
+            display: block;
+        }
+        ul.submenu li a{
+            padding: 5px 10px;
+            display: block;
+        }
+        .menu ul li:hover ul.submenu{
+            display: block;
+        }
+        .baner{
+            background-color: grey;
+            height: 450px;
+            background-image: url(jumbo.jpg);
+            background-size: cover;
+            text-align: center;
+            color: darkgrey;
+            padding: 80px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: -1;
+        }
+        .overlay{
+            width: 800px;
+            height: 450px;
+            background-color: white;
+            opacity: 0.2;
+            top: 0;
+            left: 0;
+            position: absolute;
+            padding-top: 100px
+        }
+        .overlay p,h2{
+            color: red;
+            opacity: 1;
+            font-weight: thick;
+        }
+        .footer{
+            min-height: 40px;
+            background-color: lightgrey;
+            font-family: arial, verdana, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="menu">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">content</a></li>
+                    <li><a href="#">about</a>
+                        <ul class="submenu">
+                            <li><a href="#">contact</a></li>
+                            <li><a href="#">jasks</a></li>
+                            <li><a href="#">address</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <br>
+        <br>
+    <div class="baner">
+        <div class="overlay">
+            <h2>welcome</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+    <div class="footer"><p>copyright 2019 code</p></div>
+</div>
+</body>
+</html>
