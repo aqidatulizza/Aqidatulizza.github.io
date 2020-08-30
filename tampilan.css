@@ -12,6 +12,13 @@
 		font-family : cooper black;
 		font-size : 25px;
 		}
+	.header1 {
+		background-color : black ;
+		color : pink;
+		padding : 5px;
+		font-family : cooper black;
+		font-size : 25px;
+		}
 	.menu {
 		display: block;
 		background-color:pink;
