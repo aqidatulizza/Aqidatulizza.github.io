@@ -141,7 +141,7 @@
 	.mySlides {display: none;}
 		img {vertical-align: middle;}
 	.slideshow-container {
-		max-width: 50%;
+		max-width: 100%;
 		position: cover;
 		margin: auto;
 		}
