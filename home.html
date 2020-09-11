@@ -1,109 +1,196 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>	Resep Masakan</title>
-    <link rel="stylesheet" type="text/css" href="tampilan.css">
-</head>
-<style>
-*{
-    margin: 0px;
-    padding: 0px;
-}
-body {
-    font-size: 14px;
-    font-family: verdana;
-	background-color:black;
-}
-</style>
-<body>
-<nav id="menu">
-     <ul>
-        <div id="heading">
-            <a href="#">DapurQue</a></li>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
+
+    <title>DapurQoe</title>
+  </head>
+  <body>
+    <!----navigasi---->
+    <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+        <a class="navbar-brand" style="font-size: 40px; font-family: broadway;"><b>DAPURQOE</b></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+              <a class="nav-link" href="#"><b>Beranda</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><b>Tentang Kami</b></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <b>Kategori</b>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#"><b>Camilan</b></a>
+                <a class="dropdown-item" href="#"><b>Ayam</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak"><b>Kontak</b></a>
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link" href="index.html"><b>Log Out</b></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
         </div>
-        <li><a href="#"><b>Home</a></li>
-		<li><a href="#"><b>Category</a>
-		<ul>
-		<li><a href="kategoriayam.html"><b>Ayam</a></li>
-		<li><a href="kategoricamilan.html"><b>Camilan</a></li>
-		</ul>
-		<li><a href="about.html"><b>About</a></li>
-		<li><a href="#"><b>Account</a>
-		<ul>
-		<li><a href="index.html"><b>Log Out</a></li>
-		</ul>
-		</li>
-		</ul>
-</nav>
-<div class="slideshow-container">
-
-<div class="mySlides fade">
-<div class="numbertext"></div>
-<img src="img/4.jpeg" width="100%">
-<div class="text"> </div>
-</div>
-
-<div class="mySlides fade">
-<div class="numbertext"></div>
-<img src="img/5.jpeg" width="100%">
-<div class="text"> </div>
-</div>
-
-
-</div>
-<br>
-
-<div style="text-align:center">
-<span class="dot"></span>
-<span class="dot"></span></div>
-
-</div>
-	<script src="frontend.js"></script>
-</div>
-<div class="menu-kiri">
-	<div class="kotak">
-		<img src="img/tahunew.jpeg" width="100%">
-		<p><center><b>Tahu Crispy</b></center></p>
-		<a class="tombol tombol-lengkap" href="tahucrispy.html"><center> Resep </center></a>
-		</div>
-		</div>
-<div class="menu-kiri">
-	<div class="kotak">
-		<img src="img/ayamsuwirnew.jpeg" width="100%">
-		<p><center><b>Ayam Suwir</b></center></p>
-		<a class="tombol tombol-lengkap" href="ayamsuwir.html"><center> Resep </center></a>
-		</div>
-		</div>
-		
-<div class="menu-tengah">
-	<div class="kotak">
-		<img src="img/currosnew.jpeg" width="100%">
-		<p><center><b>Curros</b></center></p>
-		<a class="tombol tombol-lengkap" href="curros.html"><center> Resep </center></a>
-		</div>
-		</div>
-<div class="menu-kanan">
-	<div class="kotak4">
-		<form>
-	<input class="search" type="text" placeholder="Cari.." required>
-	<input class="button" type="button" value="Cari">
-	</form>
-	</div>
-	</div>
-<div class="menu-kanan">
-	<div class="kotak">
-	<h3><center> Resep Populer </center></h3>
-	<nav class="menu-populer">
-                    <ul>
-                        <li><a href="tahucrispy.html">Tahu Crispy</a></li>
-                        <li><a href="ayamsuwir.html">Ayam Suwir</a></li>
-                        <li><a href="curros.html">Curros</a></li>
-                    </ul>
-                </nav>
+        </div>
+      </nav>
+      </section>
+      <!---Slider---->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100" alt="...">
             </div>
+            <div class="carousel-item">
+              <img src="2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
         </div>
-		
-</body>
+    <!---resep populer--->
+    <section class="populer">
+      <div class="container">
+        <div class="resep-box">
+          <div class="title text-center">
+          <h1>RESEP POPULER</h1>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card" style="text-align: center;">
+            <img src="ayamsuwir.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ayam Suwir</h5>
+              <a href="#" class="btn btn-primary">Lihat Resep</a>
+            </div>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="tahucrispy.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tahu Crispy</h5>
+              <a href="#" class="btn btn-primary">Lihat Resep</a>
+            </div>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="cireng.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cireng</h5>
+              <a href="#" class="btn btn-primary">Lihat Resep</a>
+            </div>
+          </div>
+        </div>   
+    </section>
+    <!---resep terbaru--->
+     <section class="populer">
+      <div class="container">
+        <div class="resep-box">
+          <div class="title text-center">
+          <h1>RESEP TERBARU</h1>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card" style="text-align: center;">
+            <img src="ayamsuwir.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ayam Suwir</h5>
+              <a href="#" class="btn btn-primary">Lihat Resep</a>
+            </div>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="tahucrispy.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tahu Crispy</h5>
+              <a href="#" class="btn btn-primary">Lihat Resep</a>
+            </div>
+          </div>
+          <div class="card" style="text-align: center;">
+            <img src="cireng.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cireng</h5>
+              <a href="#" class="btn btn-primary">Lihat Resep</a>
+            </div>
+          </div>
+        </div>   
+    </section>
+    <!---about--->
+    <section id="about" class="about">
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <img src="logo.jpg">
+        </div>
+        <div class="col-md-6">
+          <div class="subscribe">
+            <h4>TENTANG KAMI</h4>
+            <p><b>DapurQoe adalah website pilihan terpercaya Bunda untuk menyediakan masakan keluarga yang nikmat dan lezat. Kami akan membantu Bunda yang kesulitan dalam membuat masakan dengan mudah dan simple</b></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br><br><br>
+    <!---kontak--->
+    <section id="kontak" class="populer">
+      <div class="container">
+        <div class="resep-box">
+          <div class="title text-center">
+          <h1>KONTAK KAMI</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <form class="contact-form">
+              <div class="form-group">
+                <div class="follow"><b><center>Alamat:</b> Jl. Janti Barat, Malang, Indonesia</center></div>
+               
+                <div class="follow"><b><center>Telp:</b> 089612969962 </center></div>
+              
+                <div class="follow"><b><center>Email:</b> aqiza18@gmail.com </center></div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 contact-info">
+            <div class="contact-form">
+              <div class="form-group">
+            <div class="follow"><b><center>WhatsApp:</b> 087759611250  </center></div>
+           
+            <div class="follow"><b><center><center>Instagram:</b> @aqizaaa </center></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---footer--->
+    <section id="footer">
+      <div class="container text-center">
+        <p>copyright 2020 | by Aqidatul Izza</p>
+      </div>
+    </section>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+    <script type="smooth-scroll.js"></script>
+    <script >
+       var scroll= new SmoothScroll('a[href*="#"]');
+    </script>
+  </body>
 </html>
-</html>
-
