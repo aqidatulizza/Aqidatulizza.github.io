@@ -52,37 +52,24 @@
 		}
 </style>
 <body>
-	<div class="kotaklogin">
-	<b><p class="tulisanlogin"> Silakan Login </p></b>
-	
-	<form action="" method="POST">
-		<label> Username </label>
-		<input type="text" name="username" class="formlogin" placeholder="Username atau Email...">
-		
-		<label> Password </label>
-		<input type="password" name="password" class="formlogin" placeholder="password...">
-		
-		<center><input type="submit" class="tombollogin" name="submit" value="LOGIN"></center>
-	
-			<p style="float:left";><a class="link" href="daftar.html"> Kembali </a>
-		
-	</form>
-	<?php 
-		if (isset($_POST['submit'])) {
-			include 'database.php';
-			$username = $_POST['username'];
-			$password = $_POST['password'];
-			$cek = mysqli_query($kondisi,"SELECT * from tb_user WHERE username = '".$username."' AND password = '" .$password."'");
-			if(mysqli_num_rows($cek) > 0){
-			$d = mysqli_fetch_object($cek);
-			echo '<script>window.location="rumah.html"</script>';
-			}
-			else{
-				echo '<script>alert("username atau password anda salah!")</script>';
-			}
-		}
-	 ?>
-	<div>
+		<section class="login-page">
+		<form action="submitlogin.php" method="POST">
+			<div class="box">
+				<div class="form-head">
+					<h2>Log In</h2>
+				</div>
+				<form action="" method="POST">
+				<div class="form-body">
+					<input type="text" name="username" placeholder="Username" />
+					<input type="password" name="password" placeholder="Password" />
+				</div>
+				<div class="form-footer">
+					<button type="submit" name="submit">Log In</button>
+				</div>
+				</form>
+			</div>
+			</section>
+
 </body>
 </html>
 		
